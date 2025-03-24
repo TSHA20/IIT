@@ -1,0 +1,82 @@
+body{
+    font-family: 'Montserrat', sans-serif; /*font style for all letters*/
+    background-color: #1A1A1D;     /*bachground color */
+
+}
+
+.about{  /*Student details*/
+    width: 100%; /*main page width*/
+    padding: 300px 0px; /*main page padding*/
+   
+}
+
+.main{                    
+    width: 1130px;
+    max-width: 200%;
+    margin: 0 auto;  /*margin-image and details*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:200px;
+}
+
+.main_left{             /*student image*/
+    height: auto;
+    width: 420px;
+    
+}
+.main_right{           /*student details*/
+    width: 550px;
+    
+}
+
+.main_right h3{       
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: none;
+}
+.main_right ul{         
+    color: white;
+    letter-spacing: 0px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+    
+}
+
+.main_right li{                 
+    list-style-type: square;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

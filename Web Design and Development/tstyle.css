@@ -1,0 +1,171 @@
+html{
+    scroll-padding-top: 100px;
+    background-color: #1a1a1d;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1; 
+}
+
+/*-------page heading------*/
+#SpHeading{
+    color:#C3073F ;
+    padding-top: 50px ;
+}
+h2{
+    text-align: center;
+    font-size: 48px;
+    margin-top: 48px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*---------check for more & article headings-----------*/
+h4{
+    color: #ffffff;
+    margin: 0 auto;
+    width: var(--container-width-lg);
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+/*----------------------------sport section------------------------------------------------*/
+
+
+.sports__container{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    padding-bottom: 40px;
+}
+
+.sport{
+    background:#C3073F ;
+    text-align: center;
+    border-radius: 0.5rem;
+    scroll-padding-top: 10px;
+}
+.sport:hover {
+    box-shadow: 0 0 10px 10px #C3073F;
+}
+
+.sportInfo{
+    
+    padding-bottom: 1px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.sportInfo h4{
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sportInfo p{
+    margin: 1.2rem 0 2rem;
+    font-size: 1rem;
+
+}
+.sDetails {
+    background: #ffffff ;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    scroll-padding-top: 70px;
+    margin:3rem;
+    padding-bottom: 30px;  
+}
+#cri, #rug, #football, #basketball, #hockey, #tennis {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.im1{
+    padding-bottom: 30px;
+    width: 100%;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-indent: 30px;
+    padding-bottom: 10px;
+}
+
+.justifier {
+    text-align: justify;
+
+}
+.list_h{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;    
+}
+ul{
+    padding-bottom: 15px;
+}
+
+/*---- btns---*/
+#arrow-btn {
+    position: fixed;
+    bottom: 40px;
+    float: right;
+    right: 0%;
+    width: 50px;
+    height: 50px;
+    border-color: rgba(90, 24, 24, 0.74);
+    background-color: #4E4E50;
+    border-radius: 4px;
+}        
+#arrow-btn:hover {
+    background-color: rgb(236, 71, 71);
+}   
+#textcol_btn {
+    position: fixed;
+    bottom: 100px;
+    float: right;
+    right: 0%;
+    width: 50px;
+    height: 50px;
+    border-color: rgba(90, 24, 24, 0.74);
+    background-color: #4E4E50;
+    border-radius: 4px;
+}
+#textcol_btn:hover {
+    background-color: rgb(236, 71, 71);  
+}
+.Change{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    color: #eeedf1;
+    font-size: 20px;
+} 
+
+
+/*-----------footer-------*/
+#footer{
+    bottom: 40px;   
+}
+
+
+.page-editor-btn{
+    display: block;
+    margin-left: 100px;
+    font-size: .8em;
+    cursor: pointer;
+    background-color: #C3073F;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: .6em .6em ;
+    margin-bottom: 30PX;
+    color: white;
+}

@@ -1,0 +1,239 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1A1A1D; 
+}
+
+/*----------------------photo slider-------------------------------*/
+h1{
+    color: #C3073F;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#slider{
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+#slider figure{
+    position: relative;
+    width: 1000%;
+    margin: 0;
+    animation: 17s slider infinite;
+}
+
+#slider figure img{
+    width: 10%;
+    float: left;
+    }
+    .slid{
+
+        width: 1000px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    @keyframes slider{
+        
+        10%{
+            left: 0%;
+        }
+        25%{
+            left: -100%;
+        }
+        40%{
+            left: -200%;
+        }
+        60%{
+            left: -300%;
+        }
+        70%{
+            left: -400%;
+        }
+        80%{
+            left: -500%;
+        }
+        90%{
+            left: -600%;
+        }
+        100%{
+            left: -600%;
+        }
+    }
+
+/*------------AddPage_features section------------*/
+html{scroll-padding-top: 100px;}
+
+.AddPagefeatures__container{
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.AddPagefeImg :hover{
+    transform: scale(1.12);
+    z-index: 2;
+    transition: 1s;
+    box-shadow: 5px 5px 10px #111111;
+}
+
+
+/*----------History Section---------*/
+.historySection__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.historySection_right{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+h2{
+    color: #C3073F;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.hisP{
+    color: white;
+    text-align: justify;
+}
+
+/*-------------Fair play----------------*/
+.fairSection__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.fairSection_right{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+h3{                             /*TO ALL H3 TAG*/
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.SP, .CP, .DD, .V{
+    color: rgb(209, 208, 208);
+    text-align: justify;
+}
+
+/*-----------Participation section---------*/
+.participationSection__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.participationSection_right{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.GP, .YP, .DP, .SI{
+    color: rgb(209, 208, 208);
+    text-align: justify;
+}
+
+/*-------------Amateur----------------*/
+.Amateur__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.AmateurTitle{
+    font-size: 2.5rem;
+}
+
+.AmateurP{
+    color: white;
+    text-align: justify;
+}
+
+.AmateurSection_right{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+/*------------Sports and educations play--------*/
+.SnE__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.SnEP{
+    color: white;
+    text-align: justify;
+}
+
+.SnESection_right{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+/*-------------Technology---------------*/
+
+.TechnologySection__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.TechnologyP{
+    color: white;
+    text-align: justify;
+    margin-bottom: 10rem;
+}
+
+.TechnologySection_right{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+
+/*-----------------back to top---------------*/
+
+#arrow-btn {
+    position: fixed;
+    bottom: 40px;
+    float: right;
+    right: 18.5%;
+    left: 96%;
+    width: 50px;
+    height: 50px;
+    border-color: rgba(90, 24, 24, 0.74);
+    background-color: #4E4E50;
+    border-radius: 4px;
+}
+
+#arrow-btn:hover {
+    background-color: rgb(236, 71, 71);
+}

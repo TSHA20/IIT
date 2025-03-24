@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <title>Sports</title>
+    <link rel="shortcut icon" type="image/png" href="Photos/TabIconPng.png">
+    <link rel="stylesheet" href="tstyle.css">
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;0,900;1,500;1,900&display=swap" rel="stylesheet">
+    
+    
+</head> 
+<body id="getcolour" class="removecolour">
+    <!--navigation bar-->
+    <nav >
+        <div class="containers nav__container">
+            <a href="main.html"><img src="Photos/blitz_logo-01.png" alt="" width="120" height="31"></a>
+            <ul class="navbar">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="thumbnail.html">Sports</a></li>
+                <li><a href="queryForm.html">Query Form</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="additionalPage.html">Additional Page</a></li>
+                <li><a href="ourteam.html">About Us</a></li>
+                <li><button onclick="document.location='buyProducts.html'" class="btn btn-primary buy-product-btn" type="button">Buy Product</button></li>  
+            </ul>
+        </div>
+    </nav>
+    <h2 id="SpHeading">| Sports |</h2>
+    
+
+    <div class="format">
+        <h4>Click the Image for more Information</h4>
+        <div class="Change">
+            <!--background colour-->
+            <div onload="seeColor(document.getElementById('colorsList'))"  class="containers">
+                
+                <form id="txtc"> Change the background color:
+                    <select name="colorsList" id="colorsList" onchange="seeColor(this)">    
+                        <option value="#1A1A1D" selected>[DEFAULT]</option>
+                        <option value="black">[BLACK]</option> 
+                        <option value="#34282C">[RED]</option> 
+                        <option value="#404747">[GRAY]</option> 
+                        <option value="#1A3142">[BLUE]</option> 
+                        <option value="#033E3E">[GREEN]</option>
+                    </select>
+                </form>
+            </div> 
+        </div>
+    </div> 
+    
+    <div class="containers sports__container">
+        <!--crickt-->
+        <article class="sport" > 
+            <div class="cricket">
+                <a href="#cri"><img src="Photos/cricket.jpg" alt="Cricket"  width="300" height="394"></a>
+            </div>
+            <div class="sportInfo">
+                <h4>Cricket</h4>
+            </div>   
+        </article>
+        
+         <!--rugby-->
+        <article class="sport" >
+            <div class="rugby">
+                <a href="#rug"><img src="Photos/rugby.jpg" alt="Rugby" width="300" height="394"></a>
+            </div>
+            <div class="sportInfo">
+                <h4>Rugby</h4>                
+            </div>
+        </article>
+        <!--football-->
+        <article class="sport"> 
+            <div class="foodball">
+                <a href="#football"><img src="Photos/football.jpg" alt="Football" width="300" height="394"></a>
+            </div>
+            <div class="sportInfo">
+                <h4>FootBall</h4>                
+            </div>
+        </article>
+        <!--basketball-->
+        <article class="sport" > 
+            <div class="basketball">
+                <a href="#basketball"><img src="Photos/basketball.jpg" alt="Basketball" width="300" height="394"></a>
+            </div>
+            <div class="sportInfo">
+                <h4>BasketBall</h4>
+            </div>
+        </article>
+        <!--hokey-->
+        <article class="sport"  > 
+            <div class="hockey">
+                <a href="#hockey"><img src="Photos/hockey.jpg" alt="Hockey" width="300" height="394"></a>
+            </div>
+            <div class="sportInfo">
+                <h4>Hockey</h4>
+            </div>
+        </article>
+        <!--tennis-->
+        <article class="sport" >  
+            <div class="tennis">
+                <a href="#tennis"><img src="Photos/tennis.jpg" alt="Tennis" width="300" height="394"></a>
+            </div>
+            <div class="sportInfo">
+                <h4>Tennis</h4>                
+            </div>
+        </article>
+    </div>
+    
+    <a href="#txtcolour"><img src="Photos/colour.png" alt="text_colour_chnager" id="textcol_btn"></a>
+    <div class="Change">
+        <!--text colour-->
+        <div class="containers" >
+            <form >
+                <span id="txtcolour">Change text colour:</span>
+                <select name="backGround" size="1" onChange="updateTextColour(this.value)">
+                    <option selected="selected" value="1A1A1D">[DEFAULT]</option>
+                    <option value="D9072D">[RED]</option>
+                    <option value="e69900">[YELLOW]</option>
+                    <option value="006622">[GREEN]</option>
+                    <option value="0059b3">[BLUE]</option>                   
+                </select>
+            </form>
+        </div>
+    </div>
+    <!--background colour js-->
+    <script > 
+        function color(value){
+		    document.getElementById("getcolour").classList.remove("removecolour");
+		    ocument.body.style.backgroundColor= value;
+	    }
+        function updateTextColour(value) {
+            document.body.style.color = '#' + value;
+        }
+        
+        function seeColor(list) { 
+            var newColor = (list.options[list.selectedIndex].value); 
+            if (newColor) { 
+                document.bgColor = newColor; 
+            } 
+        } 
+    </script>
+    <!--larger image and description-->
+    <section class="sDetails">
+            <div id="content1" >
+                <h1 id="cri">Cricket</h1>
+                <div class ="containers">
+                    <img class="im1" src="Photos/cricket.jpg" alt="" width="800" height="458">
+                    <p class="justifier">Cricket is a sport in which two teams of eleven players compete against each other. The batting team tries to score runs, while the fielding team seeks to keep them from doing so. Runs are scored by striking the ball past the boundary, which is tossed by a fielding player to a batting player, or by the two batting players sprinting back and forth between the two wickets.  </p>
+                    <p class="justifier">The wickets are three little wooden posts located at either end of a 22-yard-long rectangle of short grass known as "the pitch." The pitch is located within the 'area of play,' which is a considerably bigger oval of grass. A 30-yard circle inside the cricket pitch or stadium serves as the playing area. The fielding team might attempt to "out" batters in a variety of methods. When a player is injured, he or she is replaced on the pitch by a teammate. When a team's "not-out" players are depleted, the other team is given the opportunity to score. In shorter cricket games, aside may also be required to halt batting after a specified number of balls have been played to their players. The team with the most runs wins after both sides have had enough opportunities to score.  </p>
+                    <p class="justifier">In the 16th century, the game began to acquire popularity in England. In a court case from 1598, the sport is mentioned for the first time. According to John Derrick, a coroner, "he and varied of his companions did run and play [on the common land] at cricket fifty years ago." Later in the 19th and 20th centuries, the game extended to nations inside the British Empire. </p>
+                    <p class="justifier">It has become a popular sport in England, Australia, India, Pakistan, Sri Lanka, Bangladesh, South Africa, New Zealand, the West Indies, and Afghanistan, Ireland, Kenya, Scotland, the Netherlands, and Zimbabwe.</p>
+                </div>
+            </div>       
+    </section>
+
+    <section class="sDetails">        
+            <div id="content2">                 
+                <h1 id="rug">Rugby</h1>
+                <div class ="containers">
+                    <img class="im1" src="Photos/rugby.jpg" alt="" width="800" height="458">
+                    <p class="justifier">Rugby football is named after Rugby School, the public school in England where it was developed. Legend has it that one day in 1823, a senior boy called William Webb Ellis elected to run with the ball rather than retiring to kick it as was the normal mode of play in Rugby School football matches. "Running in" was considered a bit like cheating then but was later accepted in the laws of Rugby Football (first published in 1846). </p>
+                    <p class="justifier">Its rival, Association football (soccer), came later. It was not formalised until 1863. Even then handling of the ball was allowed, but not catching it and running with it. In the mid 1860s an attempt was made to provide one set of laws for all football but there were irreconcilable differences, mainly concerning "hacking" (kicking an opponent in the shins). The "hackers" went on to eventually play rugby football even though hacking was barred a few years later. The "anti-hackers" went on to form Association Football, eventually banning any handling </p>
+                </div>
+            </div>       
+    </section>
+
+    <section class="sDetails">        
+            <div id="content3">                 
+                <h1 id="football">Football</h1>
+                <div class ="containers">
+                    <img class="im1" src="Photos/football.jpg" alt="" width="800" height="458">
+                    <p class="justifier">Football is a word which could mean one of several sports. The best-known type of football is association football. This is called "soccer" in North America, South Africa, and Australia to avoid confusion with other types of football that are commonly played there</p>
+                    <p class="justifier">The name football comes from the two words 'foot' and 'ball'. It is named football because the players of the game walk and often run (on their feet) while playing, as opposed to (for example) polo where the players ride horses. Football is played using a ball, also called a 'football', that is usually shaped like a sphere or an ellipsoid. The ball is often kicked with the foot, but depending on the game, it can also be hit using other parts of the body (in association football) and handling the ball is a part of some other sports known as 'football'. Players can use any part of their body except their arms and hands. Goalies can use every part of their body to keep the ball out of the goal.The name football comes from the two words 'foot' and 'ball'. It is named football because the players of the game walk and often run (on their feet) while playing, as opposed to (for example) polo where the players ride horses. Football is played using a ball, also called a 'football', that is usually shaped like a sphere or an ellipsoid. The ball is often kicked with the foot, but depending on the game, it can also be hit using other parts of the body (in association football) and handling the ball is a part of some other sports known as 'football'. Players can use any part of their body except their arms and hands. Goalies can use every part of their body to keep the ball out of the goal.</p>
+                    <p class="justifier">Some elements of football have been seen in many countries, dating back to the second and third century AD in China. The modern games of both rugby football and association football comes from 19th-century England. Kicking a ball, in Europe, was described in Britannia (now western scottish lowlands), in Germania (now Deutchland) and Gallia (now France and northern-central Italy). An evolution goes back to the Middle Ages in Paris. Association football (founded in Richmond, London at the end of 1800) spread to many other parts of Europe, and was brought to the rest of the world with colonization. Today, it is the most popular sport in the world and many people watch it on television, especially the FIFA World Cup that happens every four years. </p>
+                    <p class="justifier">Every year there is a Football Club Competition called as Champions League. All the qualified big teams take part. At the end, we have one winner who takes the prestigious UEFA trophy. All big players play for their own teams. Some big players who take part every year are Mbappe, Ronaldo, Messi, Dybala, Neymar and many more. </p>
+                </div>
+            </div>        
+    </section>
+
+    <section class="sDetails">        
+            <div id="content4">                 
+                <h1 id="basketball">Basketball</h1>
+                <div class ="containers" >
+                    <img class="im1" src=" Photos/basketball.jpg" alt="" width="800" height="458">
+                    <p class="justifier">Basketball is a team sport in which two teams compete on a rectangular court, with each team consisting of five players. The goal is to get the ball through a hoop positioned high on a backboard on the opponent's side of the court while keeping the ball out of your team's hoop. It's a popular sport all around the world, and it's played using a round, bouncy orange (orange-brown) ball. Basketball players mostly employ dribbling, shooting, sprinting, and leaping skills. A basket made from beyond the three-point line is worth three points, whereas a basket made from within the three-point line is worth two points. If a player engages in excessive physical contact, he or she may be awarded free throws for one point each. The game usually lasts four quarters, with the winning side being the one with the most points at the end of the four quarters. If the score is deadlocked at the end of the game, extra time, known as overtime, will be added to the game to allow one team to win. </p>
+                    <p class="justifier">The game is played either between men's or women's teams. Since 1936, basketball has been a part of the Summer Olympic Games. The shot clock regulation was first used in professional basketball in 1954. In 1891 the game was invented by James Naismith. </p>
+                </div>
+            </div>       
+    </section>
+
+    <section class="sDetails">        
+            <div id="content5">                 
+                <h1 id="hockey">Hockey</h1>
+                <div class ="containers" >
+                    <img class="im1" src=" Photos/hockey.jpg" alt="" width="800" height="458">
+                    <p class="justifier">Hockey is a team sport in which players use a stick to knock an item into the goal of the opposing team. James Creighton, an engineer who learned to play hockey while residing in Nova Scotia, is credited for revolutionizing the sport. Hockey may be played in different ways. </p>
+                    <ul class="list_h" >
+                        <li>Feild Hockey</li>
+                        <li>Ice Hockey</li>
+                    </ul>
+                    <p class="justifier">Field hockey is a sport that is played on grass or Astroturf using a ball. Each squad consists of eleven players. Field hockey is normally played outdoors, however there is also indoor field hockey. Field hockey is a sport that is featured at the Summer Olympic Games. </p>
+                    <p class="justifier">Ice hockey is a sport that is played on ice. Each team's players wear ice skates. They attempt to hit a little rubber disc known as a hockey puck into the goal of the other team. Each side can have up to 6 players on the rink at any given moment. It may be played both inside and outside. </p>
+                    <p class="justifier">Field hockey is a popular sport among men and women alike. It is a game that is played in many nations all around the world. It is regarded as the "National Sport" in Asian nations like Pakistan and the Republic of India. The game is played between two teams, each of which consists of eleven players. The game is divided into four 15-minute quarters, with a 15-minute halftime break and a 2-minute break between the first and third quarters. Field hockey is played with a tiny hardball on natural grass or on sand- or water-based artificial turf. Each end of the field has a goal. The shooting circle is a semi-circle around 15 meters from the goal. Goals can only be scored when the ball is in the shooting circle. </p>
+                </div>
+            </div>        
+    </section>
+
+    <section class="sDetails">        
+            <div id="content6" >                 
+                <h1 id="tennis">Tennis</h1>
+                <div class ="containers">
+                    <img class="im1" src=" Photos/tennis.jpg" alt="" width="800" height="458">
+                    <p class="justifier">&emsp;The contemporary tennis game is connected with England, and it was this country that first introduced the sport to new audiences and made it as famous as it is today, as seen by the Wimbledon Event, which has been held in London since 1877 and is the oldest tournament in the world. </p>
+                    <p class="justifier">&emsp;Tennis is currently an Olympic sport, since 1988 in Seoul However, this sport had previously and for some years been an Olympic modality, but it was finally withdrawn due to the lack of clear and thorough regulations on both sides.</p>
+                    <p class="justifier">&emsp;Tennis is a racquet sport in which two teams of two players compete against each other (doubles). Each player hits a hollow rubber ball wrapped in felt over or over a net and into the opponent's court with a tennis racket attached with a string. The goal of the game is to handle the ball in such a way that the opponent is unable to return it in a proper manner.  The player who is unable to return the ball in a legitimate manner does not receive a point, however, the opposing player does. </p>
+                </div>
+            </div>       
+    </section>
+    <br><br>
+    
+    <!--backto top-->
+    <div id="footer">
+        <a href="#top"><img src="Photos/backToTopIcon.png" alt="Top Button" id="arrow-btn"></a>
+        
+    </div>
+    <!--backto top js-->
+    <script>
+        mybutton = document.getElementById("arrow-btn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } 
+        else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+        }
+    </script>
+    <!--page editor details-->
+    <button onclick="document.location='student4.html'" class="page-editor-btn" type="button">Page Editor</button>
+</body> 
+</html>
